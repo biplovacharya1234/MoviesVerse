@@ -9,10 +9,10 @@ function Header() {
  
   return (
     <>
-      <div className="bg-neutral-900 p-2 flex justify-between">
-        <h1 className="text-5xl cursor-pointer"><span className="text-blue-500">Movies</span>Verse</h1>
+      <div className=" header sticky z-10 top-0 bg-neutral-700 p-2 flex justify-between">
+        <Link to={'/'}><h1 className="text-5xl cursor-pointer"><span className="text-blue-500">Movies</span>Verse</h1></Link>
         
-        <div className='gap-2 flex'>
+        <div className='gap-2 flex buttons'>
         <Button variant="contained">Log In</Button>
         <Link to={'/addmovie'}><Button variant="contained">Add Movie</Button></Link>
         </div>
